@@ -8,12 +8,12 @@ const CoctailList = ({ drinks }) => {
 		);
 	}
 	const formattedDrinks = drinks.map((item) => {
-		const { idDrink, strDrink, strDrinkThumb, strAlcohilic, strGlass } = item;
+		const { idDrink, strDrink, strDrinkThumb, strAlcoholic, strGlass } = item;
 		return {
 			id: idDrink,
 			name: strDrink,
 			image: strDrinkThumb,
-			info: strAlcohilic,
+			info: strAlcoholic,
 			glass: strGlass,
 		};
 	});
